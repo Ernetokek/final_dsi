@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="proyectofinal.css">
+    <title>Calculadora</title>
+</head>
+<body>
+    <div class="calculadora">
+        <div id="proceso">0</div>
+        <div id="txtresultado"> </div>
+        <div class="fila">
+            <button class="tecla" onclick="operador('7')">7</button>
+            <button class="tecla"  onclick="operador('9')">9</button>
+            <button class="tecla" id="3" onclick="operador('8')">8</button>
+            <button class="tecla" onclick="operacion('+')">+</button>
+        </div>
+        <div class="fila">
+            <button class="tecla" onclick="operador('6')">6</button>
+            <button class="tecla"  onclick="operador('4')">4</button>
+            <button class="tecla"  onclick="operador('5')">5</button>
+            <button class="tecla"  onclick="operacion('-')">-</button>
+        </div>
+        <div class="fila">
+            <button class="tecla"  onclick="operador('3')">3</button>
+            <button class="tecla"  onclick="operador('1')">1</button>
+            <button class="tecla"  onclick="operador('2')">2</button>
+            <button class="tecla"  onclick="operacion('*')">x</button>
+        </div>
+        <div class="fila">
+            <button class="tecla" onclick="limpiar()">AC</button>
+            <button class="tecla" onclick="operador('0')">0</button>
+            <button class="tecla"  onclick="calculo()">=</button>
+            <button class="tecla"  onclick="operacion('/')">/</button>
+        </div>
+    </div>
+    <br>
+
+    <div class="conresp">
+        <button id="objetos">mostrar objetos</button> <br />
+        <div id="mensajr"></div>
+
+    </div>
+    
+
+
+    <script src="proyectofinal.js"></script>
+</body> 
+</html>
